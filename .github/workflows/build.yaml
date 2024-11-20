@@ -38,5 +38,7 @@ jobs:
         file: Dockerfile
         push: true
         tags: ${{ env.REGISTRY }}/${{ github.repository_owner }}/api7-adc:${{ github.ref_name }}
+        build-args: |
+          ADC_VERSION = ${{ github.ref_name }}
       env:
         ADC_VERSION: ${{ github.ref_name }}
