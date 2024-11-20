@@ -1,4 +1,4 @@
-FROM debian:slim
+FROM debian:stable-slim
 ARG ADC_VERSION="0.16.1"
 ARG ADC_OS="linux"
 ARG ADC_ARC="amd64"
